@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+}
+
+header nav {
+    display: block;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: black;
+}
+
+#ok {
+    display: none;
+}
+
+header nav ul {
+    margin: 0;
+    overflow: hidden;
+    list-style: none;
+    /*Quita el punto de la biñeta*/
+}
+
+header nav ul li {
+    float: left;
+
+}
+
+header nav ul li a {
+    color: #A6B7DE;
+    padding: 20px;
+    display: block;
+    /*Modifica pading en todos los sentidos*/
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 100%;
+    font-family: 'Miltonian Tattoo', cursive;
+}
+
+
+
+header nav ul li a:hover {
+    background-color: #2A3A5E;
+    color: white;
+
+}
+
+@media screen and (max-width:800px) {
+    header nav {
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        position: fixed;
+
+
+    }
+
+    header nav ul li {
+        display: block;
+        float: none;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.859);
+    }
+
+    .menu_bar {
+        display: block;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu_bar .bt-menu {
+        display: block;
+        /*Bloqueo de margenes internos*/
+        padding: 20px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .menu_bar .bt-menu img {
+        float: right;
+    }
+    #interno{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+    }
+    #imenu{
+        width: 40%;
+        height: 130%;
+    }
+    #ca2{
+        padding: 0px 20px ;
+    }
+    #ok {
+        display: block;
+    }
+}
